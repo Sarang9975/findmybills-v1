@@ -37,7 +37,7 @@ interface CheckRegistrationResponse {
   msg: string;
 }
 
-const API_URL = 'http://localhost:5000';
+const API_URL = 'https://findmybills-backend.vercel.app';
 
 const LoginPage = () => {
   const navigate = useNavigate();
