@@ -37,7 +37,7 @@ const countryCodes = [
   { code: '+81', name: 'Japan' },
 ];
 
-const API_URL = 'https://findmybills-backend.vercel.app';
+const API_URL = 'https://findmybills-server-v1.vercel.app';
 
 const SignupPage = () => {
   const navigate = useNavigate();

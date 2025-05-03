@@ -102,7 +102,7 @@ const Signup = () => {
     }
 
     try {
-      const response = await axios.post('https://findmybills-backend.vercel.app/api/users/register', {
+      const response = await axios.post('https://findmybills-server-v1.vercel.app/api/users/register', {
         mobileNumber: formData.mobileNumber,
         passcode: formData.passcode
       });
