@@ -37,7 +37,7 @@ interface CheckRegistrationResponse {
   msg: string;
 }
 
-const API_URL = 'https://findmybills-server-v1.vercel.app';
+const API_URL = 'https://findmybills-server-v1.onrender.com';
 
 const LoginPage = () => {
   const navigate = useNavigate();

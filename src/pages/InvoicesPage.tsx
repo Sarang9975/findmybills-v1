@@ -500,7 +500,7 @@ const InvoicesPage: React.FC = () => {
         return;
       }
 
-      const response = await axios.get<{ data: Invoice[] }>('https://findmybills-server-v1.vercel.app/api/invoices', {
+      const response = await axios.get<{ data: Invoice[] }>('https://findmybills-server-v1.onrender.com/api/invoices', {
         headers: {
           Authorization: `Bearer ${token}`
         }
@@ -530,7 +530,7 @@ const InvoicesPage: React.FC = () => {
 
     try {
       const token = localStorage.getItem('token');
-      const response = await axios.post('https://findmybills-server-v1.vercel.app/api/invoices', formData, {
+      const response = await axios.post('https://findmybills-server-v1.onrender.com/api/invoices', formData, {
         headers: {
           Authorization: `Bearer ${token}`,
           'Content-Type': 'multipart/form-data',
@@ -550,7 +550,7 @@ const InvoicesPage: React.FC = () => {
   const handleDownload = async (invoiceId: string) => {
     try {
       const token = localStorage.getItem('token');
-      const response = await axios.get<Blob>(`https://findmybills-server-v1.vercel.app/api/invoices/${invoiceId}/download`, {
+      const response = await axios.get<Blob>(`https://findmybills-server-v1.onrender.com/api/invoices/${invoiceId}/download`, {
         headers: {
           Authorization: `Bearer ${token}`
         },
